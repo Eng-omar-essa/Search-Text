@@ -1,8 +1,8 @@
 # Search-Text
-#Setup-Database
+# Setup Database
   Get User.sql file form resource folder and import it to MYSQL to create database and table. 
 
-#Build-and-run
+# Build and run
 
 Configurations
 
