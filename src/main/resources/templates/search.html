@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Hibernate Search | matmatch</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+	<ol>
+		<li th:each="user : ${searchResults}"><b><span
+				th:text="${user.id}"></span></b> - <span th:text="${user.firstName}"></span>-
+			<span th:text="${user.lastName}"></span> - <span
+			th:text="${user.email}"></span>- <span th:text="${user.gender}"></span>
+			- <span th:text="${user.ipAdress}"></span></li>
+	</ol>
+
+	<!-- <p th:if="${searchResults.isEmpty()}"> -->
+	<p>
+    <strong>Hint</strong>: the query "<a href='/search?q='></a>" 
+   <span th:text="${error}"></span>
+<!--    <br> search Results is empty. <br/> -->
+  </p>
+
+ 
+	
+</body>
+
+</html>
