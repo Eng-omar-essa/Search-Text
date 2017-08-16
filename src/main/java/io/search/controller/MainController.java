@@ -32,7 +32,7 @@ public class MainController {
 	@RequestMapping("/")
 	@ResponseBody
 	public String index() {
-		return "Try to go here: " + "<a href='/search?q=hola'>/search?q=olga</a>";
+		return "Try to go here: " + "<a href='/search?q=olga'>/search?q=olga</a>";
 	}
 
 	/**
